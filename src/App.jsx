@@ -1,12 +1,10 @@
+import SideNavbar from "./components/SideNavbar"
 function App() {
 
   return (
-    <>
       <div>
-        <h1>Hello king</h1> 
+        <SideNavbar />
       </div>
-      
-    </>
   )
 }
 

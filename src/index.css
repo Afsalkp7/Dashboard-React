@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.sideBar{
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.personImage{
+  width: 30px;
+  border-radius: 20px;
+}
+.titleMain{
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+.titleHead{
+  font-size: smaller;
+}
+.titleImage{
+  margin-left: 30px;
+}
+.listItem{
+  border-radius: 30px;
+  color: rgba(240, 248, 255, 0.384);
+}
+.foldersMain{
+  display: flex;
+  justify-content: space-between;
+}
+
+.addNewSub{
+  color: rgba(240, 248, 255, 0.384)
+}
+.menuBar{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  position: relative;
+}
+.toggleThemeBtn{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.themeBtn{
+  padding: 10px;
+  border-radius: 20px;
+}
