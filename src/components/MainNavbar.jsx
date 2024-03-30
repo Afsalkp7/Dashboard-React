@@ -32,7 +32,7 @@ export default function MainNavbar() {
     </div>
     <div className={`${isOpen ? 'blockNav' : 'hiddenNav'} sizeNav`}>
       <div className="navMdItems">
-        <span className="navMdList"><SearchBox /></span>
+        <span className="navMdList"><SearchBox className='searchComponent'/></span>
         <span className="navMdList">
             
                 <IoSettingsOutline className='iconsNav'/>
