@@ -1,6 +1,5 @@
 import { Menu } from 'antd'
 import React from 'react'
-import {HomeOutlined} from '@ant-design/icons'
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { IoCode } from "react-icons/io5";

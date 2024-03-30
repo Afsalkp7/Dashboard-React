@@ -24,20 +24,27 @@ export default function () {
         <div className="sideBar">
           <Logo collapsed={collapsed}/>
           {collapsed?null:<Title darkTheme={darkTheme} />}
-          
         </div>
         <MenuList darkTheme={darkTheme} />
-        {/* <ToggleThemeButton darkTheme={darkTheme} toggleTheme={toggleTheme} /> */}
+        <ToggleThemeButton darkTheme={darkTheme} toggleTheme={toggleTheme} />
       </Sider>
       <Layout>
         <Header style={{ padding: 0, background: colorBgContainer }}>
-          <Button
-            type="text"
-            className="toggle"
-            onClick={()=>setCollapsed(!collapsed)}
-            icon={collapsed ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
-          />
-          <MainNavbar />
+          <div className="topNav">
+            <div>
+              <Button
+                type="text"
+                className="toggle"
+                onClick={()=>setCollapsed(!collapsed)}
+                icon={collapsed ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
+              />
+            </div>
+            <div>
+              <MainNavbar />
+            </div>
+          </div>
+          
+          
         </Header>
       </Layout>
     </Layout>
