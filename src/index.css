@@ -139,6 +139,7 @@ margin-top: 0.25rem;
 
 .search-container input[type="text"] {
   flex: 1;
+  width: 15rem;
   border: none;
   outline: none;
 }
@@ -152,4 +153,60 @@ margin-top: 0.25rem;
     display:none
     
   }
+}
+.members-chain {
+  display: flex;
+}
+.brand-cell{
+  display: flex;
+  align-items: center;
+}
+.brandMsg{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.table-container{
+  width: 100%;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.msgLength {
+  margin-left: auto;
+  margin-left: 50px; 
+}
+thead th{
+  align-items: start;
+  text-align: start;
+}
+th {
+  text-align: left;
+}
+td {
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 696px) {
+  /* Stack the table headers and cells on small screens */
+  th, td {
+    display: block;
+  }
+  
+  /* Hide the table headers on small screens */
+  th {
+    display: none;
+  }
+  
+  /* Ensure each row spans the full width on small screens */
+  td {
+    width: 100%;
+  }
+}
+td {
+  border-left: none; /* Add left border to table data cells */
+  border-right: none; /* Add right border to table data cells */
+  border-top: none; /* Remove top border from table data cells */
+  border-bottom: 1px solid #ddd; /* Add bottom border to table data cells */
 }

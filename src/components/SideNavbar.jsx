@@ -7,6 +7,7 @@ import MenuList from "./MenuList";
 import ToggleThemeButton from "./ToggleThemeButton";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import MainNavbar from "./MainNavbar";
+import DataTable from "./DataTable";
 
 const { Header, Slider } = Layout;
 
@@ -26,7 +27,7 @@ export default function () {
           {collapsed?null:<Title darkTheme={darkTheme} />}
         </div>
         <MenuList darkTheme={darkTheme} />
-        <ToggleThemeButton darkTheme={darkTheme} toggleTheme={toggleTheme} />
+        {/* <ToggleThemeButton darkTheme={darkTheme} toggleTheme={toggleTheme} /> */}
       </Sider>
       <Layout>
         <Header style={{ padding: 0, background: colorBgContainer }}>
@@ -43,8 +44,7 @@ export default function () {
               <MainNavbar />
             </div>
           </div>
-          
-          
+          <DataTable />   
         </Header>
       </Layout>
     </Layout>
